@@ -1,8 +1,9 @@
 import CountUp from "react-countup";
+import Container from "../Components/UI/Container";
 
 const Home = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-6 my-10">
+    <Container >
       <div className="md:flex items-center ">
         <div className="flex-1 space-y-4 text-center md:text-left mb-12">
           <h1 className=" text-3xl  md:text-4xl lg:text-6xl xl:text-7xl font-bold">
@@ -58,7 +59,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

@@ -5,6 +5,8 @@ import Contact from "../Pages/Contact";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Home from "../Pages/Home";
+import PrivetRotes from "./PrivetRotes";
+import Services from "../Pages/Services";
 
 const Router = createBrowserRouter([
   {
@@ -17,7 +19,19 @@ const Router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <About />,
+        element: (
+          <PrivetRotes>
+            <About />
+          </PrivetRotes>
+        ),
+      },
+      {
+        path: "services",
+        element: (
+          <PrivetRotes>
+            <Services />
+          </PrivetRotes>
+        ),
       },
       {
         path: "contact",
@@ -26,11 +40,11 @@ const Router = createBrowserRouter([
     ],
   },
   {
-    path: "login",
+    path: "/login",
     element: <Login />,
   },
   {
-    path: "register",
+    path: "/register",
     element: <Register />,
   },
   {},
